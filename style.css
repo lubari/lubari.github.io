@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Nueva Paleta de Colores */
+  --primary: #ceff06;    /* Lime Green */
+  --secondary: #1b392c;  /* Dark Teal */
+  --bg-main: #f3f3f3;    /* Light Gray */
+  --card-bg: #ffffff;    /* White */
+  --text-dark: #1b392c;  /* Dark Teal */
+
+  /* Tipografías */
+  --font-heading: "Hanken Grotesk", system-ui, -apple-system, sans-serif;
+  --font-body: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--bg-main);
+  color: var(--text-dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+}
+
+/* Utilidades personalizadas mapeadas a las variables */
+.bg-main { background-color: var(--bg-main); }
+.bg-primary { background-color: var(--primary); }
+.bg-secondary { background-color: var(--secondary); }
+.bg-card { background-color: var(--card-bg); }
+.text-primary { color: var(--primary); }
+.text-secondary { color: var(--secondary); }
+.text-dark { color: var(--text-dark); }
+.border-primary { border-color: var(--primary); }
+.border-secondary { border-color: var(--secondary); }
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Micro-animaciones para dar una sensación premium */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+}
+
+.faq-answer.open {
+  max-height: 500px; /* Suficiente para el contenido */
+  padding-top: 1rem;
+}
