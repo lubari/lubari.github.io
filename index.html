@@ -48,286 +48,111 @@
             <a href="#proyectos" class="hover:text-primary transition-colors">Demos</a>
             <a href="#precios" class="hover:text-primary transition-colors">Planes</a>
         </div>
-        <a href="#contacto"
-            class="bg-primary text-secondary font-bold px-5 py-2 text-sm uppercase tracking-widest hover:bg-secondary hover:text-white transition-colors">
-            Solicitar Presupuesto
+        <a href="https://wa.me/5491158427814" target="_blank" rel="noopener noreferrer"
+            class="bg-primary text-secondary font-bold px-3 py-1.5 sm:px-5 sm:py-2 text-xs sm:text-sm uppercase tracking-widest hover:bg-secondary hover:text-white transition-colors whitespace-nowrap flex items-center gap-1.5">
+            <span class="sm:hidden">WhatsApp</span>
+            <span class="hidden sm:inline">Escribir por WhatsApp</span>
         </a>
     </nav>
 
     <!-- [01] Hero Section -->
-    <section id="hero" class="bg-white text-secondary min-h-screen flex flex-col md:flex-row pt-16 md:pt-0">
-        <div class="w-full md:w-1/2 p-12 md:p-24 flex flex-col justify-center">
-            <h1 class="font-heading text-6xl lg:text-8xl mb-4 tracking-tight leading-none">
-                Hola, soy Ana Victoria
-            </h1>
-            <p class="font-body text-xl text-secondary/80 mb-8 max-w-md">
-                Desarrollo sitios web modernos, rápidos y funcionales enfocados en hacer crecer tu negocio o marca
-                personal.
-            </p>
-            <div>
-                <a href="#proyectos"
-                    class="inline-block bg-primary text-secondary font-bold px-8 py-4 uppercase tracking-widest text-sm hover:bg-secondary hover:text-white transition-colors">
-                    Mis Proyectos
-                </a>
-                <a href="#contacto"
-                    class="inline-block bg-primary text-secondary font-bold px-8 py-4 uppercase tracking-widest text-sm hover:bg-secondary hover:text-white transition-colors">
-                    Contactame
-                </a>
-            </div>
-        </div>
-        <div
-            class="w-full md:w-1/2 bg-white min-h-[50vh] md:min-h-screen flex items-center justify-center overflow-hidden p-8 md:p-20">
+    <section id="hero" class="bg-secondary text-white min-h-screen flex flex-col md:flex-row pt-16 md:pt-0">
+        <!-- Columna Izquierda (Imagen completa) -->
+        <div class="w-full md:w-1/2 h-[50vh] md:h-auto relative">
             <img src="images/foto-hero.jpg" alt="Ana Victoria Lubari" class="w-full h-full object-cover">
         </div>
-    </section>
 
-    <!-- [02] Presentación Breve / Sobre Mí -->
-    <section id="sobre-mi"
-        class="flex flex-col md:flex-row min-h-[80vh] border-t border-gray-100 bg-white items-center">
-        <!-- Imagen a la Izquierda con padding -->
-        <div class="w-full md:w-1/2 bg-white flex items-center justify-center p-12 md:p-16">
-            <img src="images/20251031_173152.jpg" alt="Sobre mí"
-                class="w-full max-w-[300px] md:max-w-sm lg:max-w-md object-cover aspect-[4/5]">
-        </div>
-
-        <!-- Texto a la Derecha -->
-        <div class="w-full md:w-1/2 bg-white text-secondary p-12 md:p-24 flex flex-col justify-center">
-            <div class="w-12 h-[3px] bg-primary mb-6"></div>
-            <h2 class="font-heading text-5xl md:text-6xl mb-6 tracking-tight">Sobre mí</h2>
-            <p class="font-body text-lg md:text-xl text-secondary/80 leading-relaxed max-w-xl">
-                Soy desarrolladora Web. Me especializo en crear herramientas web sencillas pero potentes: desde
-                webs de presentación profesional hasta catálogos interactivos con pedidos directos por WhatsApp para que
-                no dependas de plataformas complejas ni abones mantenimientos costosos.
-            </p>
+        <!-- Columna Derecha (Contenido de texto) -->
+        <div class="w-full md:w-1/2 p-8 sm:p-16 md:p-24 flex flex-col justify-center bg-secondary">
+            <span class="text-xs sm:text-sm font-bold uppercase tracking-widest text-primary mb-6 block">
+                Hola, soy Ana Victoria | Desarrolladora Web
+            </span>
+            <h1
+                class="font-heading text-3xl sm:text-4xl lg:text-5xl mb-8 tracking-tight leading-tight text-white font-medium">
+                Desarrollo sitios web modernos, rápidos y funcionales enfocados en hacer crecer tu negocio o marca
+                personal.
+            </h1>
+            <div>
+                <a href="#contacto"
+                    class="inline-block bg-primary text-secondary font-bold px-8 py-4 uppercase tracking-widest text-sm hover:bg-white hover:text-secondary transition-colors">
+                    Contáctame
+                </a>
+            </div>
         </div>
     </section>
 
-    <!-- [03] Mis Servicios -->
+    <!-- [02] Mis Servicios -->
     <section id="servicios" class="bg-secondary py-24 px-4 md:px-12 text-white">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-16">
-            <div class="md:w-1/3">
-                <h2 class="font-heading text-6xl md:text-7xl mb-8">Mis<br>servicios</h2>
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-sm font-bold uppercase tracking-widest text-primary mb-3 block">Servicios</span>
+                <h2 class="font-heading text-4xl sm:text-5xl md:text-6xl font-bold leading-none">Qué desarrollo</h2>
             </div>
 
-            <div class="md:w-2/3 flex flex-col gap-12">
-                <!-- Servicio 1 -->
-                <div class="border-b border-white/20 pb-12">
-                    <h4 class="font-heading font-bold text-3xl md:text-4xl text-primary mb-3">Landing Pages de Alta
-                        Conversión</h4>
-                    <h3 class="font-body text-xl font-medium text-white mb-4">Páginas efectivas diseñadas para
-                        transformar visitantes en clientes.</h3>
-                    <p class="font-body text-gray-300 mb-6">Ideal para negocios locales, lanzamientos de productos o
-                        servicios específicos que necesitan una presencia web directa y sin distracciones. Presentamos
-                        tu oferta de forma clara y enfocada en guiarlos a una sola acción: contactarte.</p>
-                    <div class="font-body">
-                        <p class="font-bold text-white mb-3 uppercase tracking-widest text-sm">Beneficios Clave</p>
-                        <ul class="list-none text-gray-300 space-y-3">
-                            <li class="flex items-start"><span class="text-primary mr-2">✓</span> <span><strong>Diseño
-                                        100% responsive:</strong> Adaptado perfectamente a celulares y
-                                    computadoras.</span></li>
-                            <li class="flex items-start"><span class="text-primary mr-2">✓</span> <span><strong>Carga
-                                        ultra rápida:</strong> Optimizada para no perder visitas provenientes de redes
-                                    sociales o anuncios.</span></li>
-                            <li class="flex items-start"><span class="text-primary mr-2">✓</span> <span><strong>Llamados
-                                        a la acción estratégicos:</strong> Botón flotante de WhatsApp y formularios de
-                                    contacto directo.</span></li>
-                            <li class="flex items-start"><span class="text-primary mr-2">✓</span> <span><strong>Sin
-                                        costos fijos de hosting:</strong> Tu web alojada gratis y lista con tu dominio
-                                    personalizado.</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Servicio 2 -->
-                <div class="border-b border-white/20 pb-12 relative">
-                    <span class="absolute top-0 right-0 bg-primary text-secondary text-xs px-3 py-1 font-bold">MÁS
-                        ELEGIDO</span>
-                    <h4 class="font-heading font-bold text-3xl md:text-4xl text-primary mb-3 pr-24">Catálogo & Carrito a
-                        WhatsApp</h4>
-                    <h3 class="font-body text-xl font-medium text-white mb-4">Tu menú o tienda digital sin pagar
-                        comisiones ni mensualidades.</h3>
-                    <p class="font-body text-gray-300 mb-6">La solución perfecta para emprendimientos gastronómicos,
-                        tiendas de ropa o comercios de productos. Tus clientes exploran tus productos, arman su carrito
-                        con cálculo de total en tiempo real y te envían la orden lista y organizada a tu WhatsApp.</p>
-                    <div class="font-body">
-                        <p class="font-bold text-white mb-3 uppercase tracking-widest text-sm">Beneficios Clave</p>
-                        <ul class="list-none text-gray-300 space-y-3">
-                            <li class="flex items-start"><span class="text-primary mr-2">✓</span> <span><strong>Mensaje
-                                        estructurado:</strong> Recibí el detalle exacto del pedido (productos,
-                                    cantidades y total) en un solo clic.</span></li>
-                            <li class="flex items-start"><span class="text-primary mr-2">✓</span> <span><strong>Cero
-                                        comisiones por venta:</strong> El 100% de la ganancia es tuya, a diferencia de
-                                    las aplicaciones de envíos.</span></li>
-                            <li class="flex items-start"><span class="text-primary mr-2">✓</span> <span><strong>Filtros
-                                        por categoría:</strong> Organización clara para que tus clientes encuentren
-                                    rápido lo que buscan.</span></li>
-                            <li class="flex items-start"><span class="text-primary mr-2">✓</span> <span><strong>Sin
-                                        mantenimientos obligatorios:</strong> Mantené tu catálogo activo sin pagar
-                                    plataformas tipo Tiendanube o Shopify.</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Servicio 3 -->
-                <div class="pb-4">
-                    <h4 class="font-heading font-bold text-3xl md:text-4xl text-primary mb-3">Portfolios Web para
-                        Creativos & Diseñadores</h4>
-                    <h3 class="font-body text-xl font-medium text-white mb-4">Mostrá tus proyectos con el nivel visual y
-                        la elegancia que tu trabajo merece.</h3>
-                    <p class="font-body text-gray-300 mb-6">Pensado exclusivamente para arquitectos, diseñadores
-                        (interiores, gráficos, UX/UI), fotógrafos y profesionales creativos que necesitan un espacio
-                        propio para destacar su trabajo. Creamos una galería web de alto impacto estético que resalta la
-                        calidad de tus proyectos, transmite autoridad y convierte a los visitantes en nuevos clientes.
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tarjeta 1 -->
+                <a href="servicios.html#landing"
+                    class="block bg-secondary border border-white/20 p-8 hover:bg-white hover:text-secondary hover:border-white transition-all duration-300 group hover:-translate-y-2">
+                    <span class="text-4xl mb-6 block group-hover:scale-110 transition-transform duration-300">🚀</span>
+                    <h3 class="font-heading font-bold text-2xl mb-4 group-hover:text-secondary text-primary">Landing
+                        Pages</h3>
+                    <p class="font-body text-gray-300 group-hover:text-secondary/80 mb-6 text-sm leading-relaxed">
+                        Páginas efectivas diseñadas para transformar visitantes en clientes. Ideales para lanzar
+                        productos, promocionar servicios específicos o campañas publicitarias de alta conversión.
                     </p>
-                    <div class="font-body">
-                        <p class="font-bold text-white mb-3 uppercase tracking-widest text-sm">Beneficios Clave</p>
-                        <ul class="list-none text-gray-300 space-y-3">
-                            <li class="flex items-start"><span class="text-primary mr-2">✓</span> <span><strong>Galerías
-                                        de proyectos de alto impacto:</strong> Mapeo de fotos en alta resolución,
-                                    renders o piezas gráficas sin perder velocidad de carga.</span></li>
-                            <li class="flex items-start"><span class="text-primary mr-2">✓</span>
-                                <span><strong>Presentación de casos de estudio:</strong> Estructura limpia para detallar
-                                    el proceso creativo, concepto, materiales y resultados de cada trabajo.</span>
-                            </li>
-                            <li class="flex items-start"><span class="text-primary mr-2">✓</span> <span><strong>Diseño
-                                        centrado en lo visual:</strong> Maquetación minimalista y cuidada donde las
-                                    imágenes y tu trabajo son los verdaderos protagonistas.</span></li>
-                            <li class="flex items-start"><span class="text-primary mr-2">✓</span> <span><strong>Contacto
-                                        y solicitud de presupuestos:</strong> Botón directo a WhatsApp o formulario para
-                                    que potenciales clientes te contacten en un clic.</span></li>
-                        </ul>
-                    </div>
-                </div>
+                    <span
+                        class="text-sm font-bold uppercase tracking-widest text-primary group-hover:text-secondary flex items-center gap-2">
+                        Ver más detalles <span
+                            class="group-hover:translate-x-2 transition-transform duration-300">→</span>
+                    </span>
+                </a>
+
+                <!-- Tarjeta 2 -->
+                <a href="servicios.html#catalogo"
+                    class="block bg-secondary border border-white/20 p-8 hover:bg-white hover:text-secondary hover:border-white transition-all duration-300 group hover:-translate-y-2 relative">
+                    <span
+                        class="absolute top-0 right-0 bg-primary text-secondary text-[10px] px-3 py-1 font-bold uppercase tracking-wider">Destacado</span>
+                    <span class="text-4xl mb-6 block group-hover:scale-110 transition-transform duration-300">🛒</span>
+                    <h3 class="font-heading font-bold text-2xl mb-4 group-hover:text-secondary text-primary">Catálogo
+                        WhatsApp</h3>
+                    <p class="font-body text-gray-300 group-hover:text-secondary/80 mb-6 text-sm leading-relaxed">
+                        Tu tienda digital o menú sin comisiones ni suscripciones mensuales. Tus clientes arman su pedido
+                        y te lo envían estructurado directo a tu chat.
+                    </p>
+                    <span
+                        class="text-sm font-bold uppercase tracking-widest text-primary group-hover:text-secondary flex items-center gap-2">
+                        Ver más detalles <span
+                            class="group-hover:translate-x-2 transition-transform duration-300">→</span>
+                    </span>
+                </a>
+
+                <!-- Tarjeta 3 -->
+                <a href="servicios.html#portfolio"
+                    class="block bg-secondary border border-white/20 p-8 hover:bg-white hover:text-secondary hover:border-white transition-all duration-300 group hover:-translate-y-2">
+                    <span class="text-4xl mb-6 block group-hover:scale-110 transition-transform duration-300">🎨</span>
+                    <h3 class="font-heading font-bold text-2xl mb-4 group-hover:text-secondary text-primary">Portfolios
+                        Creativos</h3>
+                    <p class="font-body text-gray-300 group-hover:text-secondary/80 mb-6 text-sm leading-relaxed">
+                        Exhibí tus proyectos con el impacto visual y la elegancia que tu trabajo merece. Perfecto para
+                        fotógrafos, diseñadores y arquitectos.
+                    </p>
+                    <span
+                        class="text-sm font-bold uppercase tracking-widest text-primary group-hover:text-secondary flex items-center gap-2">
+                        Ver más detalles <span
+                            class="group-hover:translate-x-2 transition-transform duration-300">→</span>
+                    </span>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- [05] Muestra de Proyectos -->
-    <section id="proyectos" class="bg-bg-main py-24 px-4 md:px-12 text-secondary">
-        <h2 class="font-heading text-5xl md:text-7xl mb-16 text-center">Proyectos en los que trabajé</h2>
-
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1400px] mx-auto">
-            <!-- Proyecto 1 -->
-            <div class="bg-white border border-gray-200 p-8 flex flex-col h-full hover-lift shadow-sm">
-                <div class="mb-6">
-                    <span
-                        class="bg-primary text-secondary text-xs px-3 py-1 font-bold uppercase tracking-widest">Portfolio
-                        Creativo & Visual</span>
-                </div>
-                <div
-                    class="w-full aspect-video bg-bg-main mb-6 flex items-center justify-center overflow-hidden relative">
-                    <!-- CAMBIAR AQUÍ LA IMAGEN DEL PROYECTO 1 -->
-                    <img src="images/portfolio1.png" alt="Portfolio Karen Barboza"
-                        class="w-full h-full object-cover cursor-pointer lightbox-trigger"
-                        data-caption="Portfolio Karen Barboza"
-                        data-gallery='["images/portfolio1.png", "images/portfolio2.png"]'>
-                </div>
-                <h4 class="font-heading text-3xl mb-2 text-secondary">Portfolio de Marca Personal & Diseño</h4>
-                <p class="font-body text-secondary/60 font-bold mb-4 uppercase tracking-widest text-xs">Karen Barboza —
-                    Diseñadora Gráfica</p>
-                <p class="font-body text-secondary/80 mb-6 flex-grow">Sitio web de alto impacto estético desarrollado
-                    para exhibir proyectos de diseño gráfico, identidad visual y piezas editoriales. Enfocado en
-                    resaltar la calidad de las imágenes y la versatilidad creativa con una maquetación minimalista y
-                    fluida.</p>
-                <div class="mb-8 border-t border-gray-100 pt-6">
-                    <p class="font-bold text-sm uppercase tracking-widest mb-3">Características Destacadas</p>
-                    <ul class="list-none space-y-2 text-sm text-secondary/80">
-                        <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span> <span>Layout
-                                centrado en el contenido visual e identidad tipográfica.</span></li>
-                        <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span> <span>Carga
-                                rápida de recursos gráficos.</span></li>
-                        <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span> <span>Enlace
-                                directo a contacto profesional.</span></li>
-                    </ul>
-                </div>
-                <div class="block text-center border-2 border-gray-300 text-gray-500 font-bold py-3 px-6 mt-auto">
-                    Proyecto en curso
-                </div>
-            </div>
-
-            <!-- Proyecto 2 -->
-            <div class="bg-white border border-gray-200 p-8 flex flex-col h-full hover-lift shadow-sm">
-                <div class="mb-6">
-                    <span
-                        class="bg-primary text-secondary text-xs px-3 py-1 font-bold uppercase tracking-widest">Catálogo
-                        & Pedidos a WhatsApp</span>
-                </div>
-                <div
-                    class="w-full aspect-video bg-bg-main mb-6 flex items-center justify-center overflow-hidden relative">
-                    <!-- CAMBIAR AQUÍ LA IMAGEN DEL PROYECTO 2 -->
-                    <img src="images/focacceria.png" alt="Focacceria Vittoria"
-                        class="w-full h-full object-cover cursor-pointer lightbox-trigger"
-                        data-caption="Focacceria Vittoria" data-gallery='["images/focacceria.png"]'>
-                </div>
-                <h4 class="font-heading text-3xl mb-2 text-secondary">Menú Digital Interactivo & Delivery</h4>
-                <p class="font-body text-secondary/60 font-bold mb-4 uppercase tracking-widest text-xs">Focacceria
-                    Vittoria</p>
-                <p class="font-body text-secondary/80 mb-6 flex-grow">Plataforma web gastronómica diseñada para permitir
-                    que los clientes armen su pedido seleccionando productos, agregándolos al carrito y calculando el
-                    total dinámicamente. Al confirmar, genera un mensaje formateado enviado directamente al WhatsApp del
-                    local para la preparación del pedido.</p>
-                <div class="mb-8 border-t border-gray-100 pt-6">
-                    <p class="font-bold text-sm uppercase tracking-widest mb-3">Características Destacadas</p>
-                    <ul class="list-none space-y-2 text-sm text-secondary/80">
-                        <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span> <span>Carrito
-                                interactivo en tiempo real sin comisiones por venta.</span></li>
-                        <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span> <span>Formateo
-                                automático de orden directo al chat de WhatsApp.</span></li>
-                        <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span> <span>Despliegue
-                                continuo en Vercel con costo $0 de hosting mensual.</span></li>
-                    </ul>
-                </div>
-                <a href="https://focacceria-vittoria.vercel.app/" target="_blank" rel="noopener noreferrer"
-                    class="block text-center border-2 border-secondary text-secondary font-bold py-3 px-6 hover:bg-secondary hover:text-white transition-colors mt-auto">Probar
-                    Web</a>
-            </div>
-
-            <!-- Proyecto 3 -->
-            <div class="bg-white border border-gray-200 p-8 flex flex-col h-full hover-lift shadow-sm">
-                <div class="mb-6">
-                    <span class="bg-primary text-secondary text-xs px-3 py-1 font-bold uppercase tracking-widest">Web
-                        Institucional & Landing Page</span>
-                </div>
-                <div
-                    class="w-full aspect-video bg-bg-main mb-6 flex items-center justify-center overflow-hidden relative">
-                    <!-- CAMBIAR AQUÍ LA IMAGEN DEL PROYECTO 3 -->
-                    <img src="images/epconsultora.png" alt="EP Consultora"
-                        class="w-full h-full object-cover cursor-pointer lightbox-trigger" data-caption="EP Consultora"
-                        data-gallery='["images/epconsultora.png", "images/epconsultora1.png", "images/epconsultora2.png"]'>
-                </div>
-                <h4 class="font-heading text-3xl mb-2 text-secondary">Sitio Web Corporativo & Consultoría</h4>
-                <p class="font-body text-secondary/60 font-bold mb-4 uppercase tracking-widest text-xs">EP Consultora
-                </p>
-                <p class="font-body text-secondary/80 mb-6 flex-grow">Landing page institucional diseñada para presentar
-                    servicios de consultoría profesional con un tono sólido y confiable. Organiza la propuesta de valor,
-                    los pilares de la empresa y los canales de contacto directo para captar clientes corporativos.</p>
-                <div class="mb-8 border-t border-gray-100 pt-6">
-                    <p class="font-bold text-sm uppercase tracking-widest mb-3">Características Destacadas</p>
-                    <ul class="list-none space-y-2 text-sm text-secondary/80">
-                        <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span>
-                            <span>Arquitectura de información clara orientada a la generación de contactos.</span>
-                        </li>
-                        <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span> <span>Diseño
-                                100% adaptado a dispositivos móviles.</span></li>
-                        <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span>
-                            <span>Integración con dominio propio y formularios directos.</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="block text-center border-2 border-gray-300 text-gray-500 font-bold py-3 px-6 mt-auto">
-                    Proyecto en curso
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- [06] Precios y FAQ -->
+    <!-- [03] Precios y FAQ -->
     <section id="precios"
         class="py-24 px-4 md:px-12 bg-bg-main flex flex-col md:flex-row gap-16 text-secondary border-t border-gray-200">
 
         <!-- Precios -->
         <div class="w-full md:w-1/2">
-            <h2 class="font-heading text-6xl md:text-7xl mb-12">Planes</h2>
+            <h2 class="font-heading text-4xl sm:text-6xl md:text-7xl mb-12">Planes</h2>
             <div class="space-y-6">
                 <!-- Plan A -->
                 <div
@@ -363,7 +188,7 @@
 
         <!-- FAQ -->
         <div class="w-full md:w-1/2">
-            <h2 class="font-heading text-6xl md:text-7xl mb-12">Preguntas Frecuentes</h2>
+            <h2 class="font-heading text-4xl sm:text-6xl md:text-7xl mb-12">Preguntas Frecuentes</h2>
             <div class="space-y-4" id="faq-container">
                 <div class="border-b border-secondary/20 pb-4 faq-item cursor-pointer">
                     <div class="flex justify-between items-center">
@@ -399,10 +224,178 @@
         </div>
     </section>
 
+    <!-- [04] Presentación Breve / Sobre Mí -->
+    <section id="sobre-mi"
+        class="flex flex-col md:flex-row min-h-[80vh] border-t border-gray-100 bg-white items-center">
+        <!-- Imagen a la Izquierda con padding -->
+        <div class="w-full md:w-1/2 bg-white flex items-center justify-center p-12 md:p-16">
+            <img src="images/20251031_173152.jpg" alt="Sobre mí"
+                class="w-full max-w-[300px] md:max-w-sm lg:max-w-md object-cover aspect-[4/5]">
+        </div>
+
+        <!-- Texto a la Derecha -->
+        <div class="w-full md:w-1/2 bg-white text-secondary p-12 md:p-24 flex flex-col justify-center">
+            <div class="w-12 h-[3px] bg-primary mb-6"></div>
+            <h2 class="font-heading text-5xl md:text-6xl mb-6 tracking-tight">Sobre mí</h2>
+            <p class="font-body text-lg md:text-xl text-secondary/80 leading-relaxed max-w-xl">
+                Soy desarrolladora Web. Me especializo en crear herramientas web sencillas pero potentes: desde
+                webs de presentación profesional hasta catálogos interactivos con pedidos directos por WhatsApp para que
+                no dependas de plataformas complejas ni abones mantenimientos costosos.
+            </p>
+        </div>
+    </section>
+
+    <!-- [05] Muestra de Proyectos -->
+    <section id="proyectos" class="bg-bg-main py-24 px-4 md:px-12 text-secondary">
+        <h2 class="font-heading text-3xl sm:text-5xl md:text-7xl mb-16 text-center">Proyectos en los que trabajé</h2>
+
+        <div class="flex flex-col gap-12 max-w-[1200px] mx-auto">
+            <!-- Proyecto 1 -->
+            <div class="bg-white border border-gray-200 flex flex-col md:flex-row hover-lift shadow-sm overflow-hidden">
+                <!-- Imagen -->
+                <div
+                    class="w-full md:w-1/2 aspect-video md:aspect-auto bg-bg-main flex items-center justify-center overflow-hidden">
+                    <img src="images/portfolio1.png" alt="Portfolio Karen Barboza"
+                        class="w-full h-full object-cover cursor-pointer lightbox-trigger"
+                        data-caption="Portfolio Karen Barboza"
+                        data-gallery='["images/portfolio1.png", "images/portfolio2.png"]'>
+                </div>
+                <!-- Contenido -->
+                <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4">
+                            <span
+                                class="bg-primary text-secondary text-xs px-3 py-1 font-bold uppercase tracking-widest">Portfolio
+                                Creativo & Visual</span>
+                        </div>
+                        <h4 class="font-heading text-2xl sm:text-3xl mb-2 text-secondary">Portfolio de Marca Personal &
+                            Diseño</h4>
+                        <p class="font-body text-secondary/60 font-bold mb-4 uppercase tracking-widest text-xs">Karen
+                            Barboza — Diseñadora Gráfica</p>
+                        <p class="font-body text-secondary/80 mb-6 text-sm leading-relaxed">Sitio web de alto impacto
+                            estético desarrollado para exhibir proyectos de diseño gráfico, identidad visual y piezas
+                            editoriales. Enfocado en resaltar la calidad de las imágenes y la versatilidad creativa con
+                            una maquetación minimalista y fluida.</p>
+
+                        <div class="mb-8 border-t border-gray-100 pt-6">
+                            <p class="font-bold text-xs uppercase tracking-widest mb-3 text-secondary/70">
+                                Características Destacadas</p>
+                            <ul class="list-none space-y-2 text-sm text-secondary/80">
+                                <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span>
+                                    <span>Layout centrado en el contenido visual e identidad tipográfica.</span></li>
+                                <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span>
+                                    <span>Carga rápida de recursos gráficos.</span></li>
+                                <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span>
+                                    <span>Enlace directo a contacto profesional.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block text-center border-2 border-gray-300 text-gray-500 font-bold py-3 px-6">
+                        Proyecto en curso
+                    </div>
+                </div>
+            </div>
+
+            <!-- Proyecto 2 -->
+            <div class="bg-white border border-gray-200 flex flex-col md:flex-row hover-lift shadow-sm overflow-hidden">
+                <!-- Imagen -->
+                <div
+                    class="w-full md:w-1/2 aspect-video md:aspect-auto bg-bg-main flex items-center justify-center overflow-hidden">
+                    <img src="images/focacceria.png" alt="Focacceria Vittoria"
+                        class="w-full h-full object-cover cursor-pointer lightbox-trigger"
+                        data-caption="Focacceria Vittoria" data-gallery='["images/focacceria.png"]'>
+                </div>
+                <!-- Contenido -->
+                <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4">
+                            <span
+                                class="bg-primary text-secondary text-xs px-3 py-1 font-bold uppercase tracking-widest">Catálogo
+                                & Pedidos a WhatsApp</span>
+                        </div>
+                        <h4 class="font-heading text-2xl sm:text-3xl mb-2 text-secondary">Menú Digital Interactivo &
+                            Delivery</h4>
+                        <p class="font-body text-secondary/60 font-bold mb-4 uppercase tracking-widest text-xs">
+                            Focacceria Vittoria</p>
+                        <p class="font-body text-secondary/80 mb-6 text-sm leading-relaxed">Plataforma web gastronómica
+                            diseñada para permitir que los clientes armen su pedido seleccionando productos,
+                            agregándolos al carrito y calculando el total dinámicamente. Al confirmar, genera un mensaje
+                            formateado enviado directamente al WhatsApp del local para la preparación del pedido.</p>
+
+                        <div class="mb-8 border-t border-gray-100 pt-6">
+                            <p class="font-bold text-xs uppercase tracking-widest mb-3 text-secondary/70">
+                                Características Destacadas</p>
+                            <ul class="list-none space-y-2 text-xs text-secondary/80">
+                                <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span>
+                                    <span>Carrito interactivo en tiempo real sin comisiones por venta.</span></li>
+                                <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span>
+                                    <span>Formateo automático de orden directo al chat de WhatsApp.</span></li>
+                                <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span>
+                                    <span>Despliegue continuo en Vercel con costo $0 de hosting mensual.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="https://focacceria-vittoria.vercel.app/" target="_blank" rel="noopener noreferrer"
+                        class="block text-center border-2 border-secondary text-secondary font-bold py-3 px-6 hover:bg-secondary hover:text-white transition-colors">Probar
+                        Web</a>
+                </div>
+            </div>
+
+            <!-- Proyecto 3 -->
+            <div class="bg-white border border-gray-200 flex flex-col md:flex-row hover-lift shadow-sm overflow-hidden">
+                <!-- Imagen -->
+                <div
+                    class="w-full md:w-1/2 aspect-video md:aspect-auto bg-bg-main flex items-center justify-center overflow-hidden">
+                    <img src="images/epconsultora.png" alt="EP Consultora"
+                        class="w-full h-full object-cover cursor-pointer lightbox-trigger" data-caption="EP Consultora"
+                        data-gallery='["images/epconsultora.png", "images/epconsultora1.png", "images/epconsultora2.png"]'>
+                </div>
+                <!-- Contenido -->
+                <div class="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-between">
+                    <div>
+                        <div class="mb-4">
+                            <span
+                                class="bg-primary text-secondary text-xs px-3 py-1 font-bold uppercase tracking-widest">Web
+                                Institucional & Landing Page</span>
+                        </div>
+                        <h4 class="font-heading text-2xl sm:text-3xl mb-2 text-secondary">Sitio Web Corporativo &
+                            Consultoría</h4>
+                        <p class="font-body text-secondary/60 font-bold mb-4 uppercase tracking-widest text-xs">EP
+                            Consultora</p>
+                        <p class="font-body text-secondary/80 mb-6 text-sm leading-relaxed">Landing page institucional
+                            diseñada para presentar servicios de consultoría profesional con un tono sólido y confiable.
+                            Organiza la propuesta de valor, los pilares de la empresa y los canales de contacto directo
+                            para captar clientes corporativos.</p>
+
+                        <div class="mb-8 border-t border-gray-100 pt-6">
+                            <p class="font-bold text-sm uppercase tracking-widest mb-3 text-secondary/70">
+                                Características Destacadas</p>
+                            <ul class="list-none space-y-2 text-sm text-secondary/80">
+                                <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span>
+                                    <span>Arquitectura de información clara orientada a la generación de
+                                        contactos.</span></li>
+                                <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span>
+                                    <span>Diseño 100% adaptado a dispositivos móviles.</span></li>
+                                <li class="flex items-start"><span class="text-primary mr-2 font-bold">✓</span>
+                                    <span>Integración con dominio propio y formularios directos.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="block text-center border-2 border-gray-300 text-gray-500 font-bold py-3 px-6">
+                        Proyecto en curso
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
     <!-- [08] Contacto -->
     <section id="contacto" class="flex flex-col md:flex-row min-h-screen">
-        <div class="w-full md:w-1/2 bg-primary text-secondary p-12 md:p-24 flex flex-col justify-center">
-            <h2 class="font-heading text-7xl md:text-[8vw] leading-none mb-8 tracking-tight">Crezcamos<br>juntos</h2>
+        <div class="w-full md:w-1/2 bg-primary text-secondary p-6 sm:p-12 md:p-24 flex flex-col justify-center">
+            <h2 class="font-heading text-5xl sm:text-7xl md:text-[8vw] leading-none mb-8 tracking-tight">
+                Crezcamos<br>juntos</h2>
             <p class="font-body text-xl md:text-2xl mb-12">Mejoremos tu presencia online.</p>
 
             <div class="space-y-6">
@@ -416,8 +409,8 @@
                 </div>
             </div>
         </div>
-        <div class="w-full md:w-1/2 bg-white p-12 md:p-24 flex flex-col justify-center border-l border-gray-200">
-            <h3 class="font-heading text-4xl mb-8 text-secondary">Share your project details</h3>
+        <div class="w-full md:w-1/2 bg-white p-6 sm:p-12 md:p-24 flex flex-col justify-center border-l border-gray-200">
+            <h3 class="font-heading text-4xl mb-8 text-secondary">Compartí tus ideas de proyecto</h3>
             <form class="w-full max-w-lg" onsubmit="event.preventDefault(); alert('Formulario enviado (simulación).');">
                 <div class="mb-6">
                     <label class="block text-sm font-bold mb-2">Tu nombre*</label>
