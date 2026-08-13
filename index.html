@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana Victoria Lubari - Fullstack Web Developer</title>
+    <title>Ana Victoria Lubari - Desarrolladora Web</title>
     <meta name="description"
         content="Desarrollo sitios web modernos, rápidos y funcionales enfocados en hacer crecer tu negocio o marca personal.">
 
@@ -36,7 +36,12 @@
     <!-- Navbar -->
     <nav
         class="fixed top-0 left-0 w-full z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 py-4 px-6 md:px-12 flex justify-between items-center shadow-sm">
-        <a href="#hero" class="font-heading font-bold text-2xl text-secondary">AVL.</a>
+        <a href="#hero" class="font-heading text-secondary flex flex-col">
+            <span class="font-bold text-xl leading-none">Ana Victoria Lubari</span>
+            <span class="text-[10px] font-body uppercase tracking-widest text-secondary mt-1 font-bold">Desarrolladora
+                Web
+            </span>
+        </a>
         <div class="hidden md:flex gap-8 text-sm font-bold uppercase tracking-widest text-secondary">
             <a href="#sobre-mi" class="hover:text-primary transition-colors">Sobre mí</a>
             <a href="#servicios" class="hover:text-primary transition-colors">Servicios</a>
@@ -45,14 +50,14 @@
         </div>
         <a href="#contacto"
             class="bg-primary text-secondary font-bold px-5 py-2 text-sm uppercase tracking-widest hover:bg-secondary hover:text-white transition-colors">
-            Contacto
+            Solicitar Presupuesto
         </a>
     </nav>
 
     <!-- [01] Hero Section -->
     <section id="hero" class="bg-white text-secondary min-h-screen flex flex-col md:flex-row pt-16 md:pt-0">
         <div class="w-full md:w-1/2 p-12 md:p-24 flex flex-col justify-center">
-            <h1 class="font-heading text-5xl md:text-7xl mb-4 tracking-tight">
+            <h1 class="font-heading text-6xl lg:text-8xl mb-4 tracking-tight leading-none">
                 Hola, soy Ana Victoria
             </h1>
             <p class="font-body text-xl text-secondary/80 mb-8 max-w-md">
@@ -60,9 +65,13 @@
                 personal.
             </p>
             <div>
+                <a href="#proyectos"
+                    class="inline-block bg-primary text-secondary font-bold px-8 py-4 uppercase tracking-widest text-sm hover:bg-secondary hover:text-white transition-colors">
+                    Mis Proyectos
+                </a>
                 <a href="#contacto"
                     class="inline-block bg-primary text-secondary font-bold px-8 py-4 uppercase tracking-widest text-sm hover:bg-secondary hover:text-white transition-colors">
-                    Contactarme
+                    Contactame
                 </a>
             </div>
         </div>
@@ -86,7 +95,7 @@
             <div class="w-12 h-[3px] bg-primary mb-6"></div>
             <h2 class="font-heading text-5xl md:text-6xl mb-6 tracking-tight">Sobre mí</h2>
             <p class="font-body text-lg md:text-xl text-secondary/80 leading-relaxed max-w-xl">
-                Soy desarrolladora Fullstack. Me especializo en crear herramientas web sencillas pero potentes: desde
+                Soy desarrolladora Web. Me especializo en crear herramientas web sencillas pero potentes: desde
                 webs de presentación profesional hasta catálogos interactivos con pedidos directos por WhatsApp para que
                 no dependas de plataformas complejas ni abones mantenimientos costosos.
             </p>
@@ -193,56 +202,6 @@
         </div>
     </section>
 
-    <!-- [04] Demostración Interactiva -->
-    <section class="py-24 px-4 md:px-12 bg-bg-main border-y border-gray-200">
-        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-16">
-            <div class="w-full md:w-1/2">
-                <div class="w-12 h-1 bg-primary mb-8"></div>
-                <h2 class="font-heading text-5xl md:text-7xl mb-8 text-secondary">Simulador interactivo</h2>
-                <p class="font-body text-xl text-secondary mb-8">
-                    Experimentá cómo ven tus clientes el catálogo. Agregá productos al carrito y mirá cómo se genera el
-                    mensaje para WhatsApp.
-                </p>
-                <button id="btn-simulador"
-                    class="bg-secondary text-white font-bold px-8 py-4 hover:bg-primary hover:text-secondary transition-colors">
-                    Probar ahora
-                </button>
-            </div>
-
-            <div class="w-full md:w-1/2">
-                <div class="bg-white rounded-none border border-gray-200 p-8 max-w-md mx-auto shadow-xl">
-                    <div class="border-b border-gray-200 pb-4 mb-6">
-                        <h4 class="font-heading text-3xl text-secondary">🛒 Tu Negocio</h4>
-                    </div>
-
-                    <div class="space-y-4 mb-8" id="simulador-items">
-                        <div class="flex justify-between items-center bg-bg-main p-4">
-                            <div>
-                                <p class="font-bold text-secondary">Producto Prueba</p>
-                                <p class="text-secondary font-bold">$12.000</p>
-                            </div>
-                            <button
-                                class="bg-primary text-secondary w-10 h-10 flex items-center justify-center font-bold hover:bg-secondary hover:text-white transition-colors"
-                                onclick="agregarAlCarrito(12000, 'Producto de Prueba')">+</button>
-                        </div>
-                    </div>
-
-                    <div class="border-t border-gray-200 pt-6">
-                        <div class="flex justify-between font-bold text-xl mb-6 text-secondary">
-                            <span>Total:</span>
-                            <span id="simulador-total">$0</span>
-                        </div>
-                        <button
-                            class="w-full bg-secondary text-white py-4 font-bold text-lg hover:bg-primary hover:text-secondary transition-colors"
-                            onclick="enviarWhatsApp()">
-                            Enviar pedido por WhatsApp
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- [05] Muestra de Proyectos -->
     <section id="proyectos" class="bg-bg-main py-24 px-4 md:px-12 text-secondary">
         <h2 class="font-heading text-5xl md:text-7xl mb-16 text-center">Proyectos en los que trabajé</h2>
@@ -258,7 +217,10 @@
                 <div
                     class="w-full aspect-video bg-bg-main mb-6 flex items-center justify-center overflow-hidden relative">
                     <!-- CAMBIAR AQUÍ LA IMAGEN DEL PROYECTO 1 -->
-                    <img src="images/demo-1.jpg" alt="Portfolio Karen Barboza" class="w-full h-full object-cover">
+                    <img src="images/portfolio1.png" alt="Portfolio Karen Barboza"
+                        class="w-full h-full object-cover cursor-pointer lightbox-trigger"
+                        data-caption="Portfolio Karen Barboza"
+                        data-gallery='["images/portfolio1.png", "images/portfolio2.png"]'>
                 </div>
                 <h4 class="font-heading text-3xl mb-2 text-secondary">Portfolio de Marca Personal & Diseño</h4>
                 <p class="font-body text-secondary/60 font-bold mb-4 uppercase tracking-widest text-xs">Karen Barboza —
@@ -278,9 +240,9 @@
                                 directo a contacto profesional.</span></li>
                     </ul>
                 </div>
-                <a href="https://lubari.github.io/karen-barboza-porfolio/" target="_blank" rel="noopener noreferrer"
-                    class="block text-center border-2 border-secondary text-secondary font-bold py-3 px-6 hover:bg-secondary hover:text-white transition-colors mt-auto">Ver
-                    Portfolio En Vivo</a>
+                <div class="block text-center border-2 border-gray-300 text-gray-500 font-bold py-3 px-6 mt-auto">
+                    Proyecto en curso
+                </div>
             </div>
 
             <!-- Proyecto 2 -->
@@ -293,7 +255,9 @@
                 <div
                     class="w-full aspect-video bg-bg-main mb-6 flex items-center justify-center overflow-hidden relative">
                     <!-- CAMBIAR AQUÍ LA IMAGEN DEL PROYECTO 2 -->
-                    <img src="images/focacceria.png" alt="Focacceria Vittoria" class="w-full h-full object-cover">
+                    <img src="images/focacceria.png" alt="Focacceria Vittoria"
+                        class="w-full h-full object-cover cursor-pointer lightbox-trigger"
+                        data-caption="Focacceria Vittoria" data-gallery='["images/focacceria.png"]'>
                 </div>
                 <h4 class="font-heading text-3xl mb-2 text-secondary">Menú Digital Interactivo & Delivery</h4>
                 <p class="font-body text-secondary/60 font-bold mb-4 uppercase tracking-widest text-xs">Focacceria
@@ -327,7 +291,9 @@
                 <div
                     class="w-full aspect-video bg-bg-main mb-6 flex items-center justify-center overflow-hidden relative">
                     <!-- CAMBIAR AQUÍ LA IMAGEN DEL PROYECTO 3 -->
-                    <img src="images/demo-3.jpg" alt="EP Consultora" class="w-full h-full object-cover">
+                    <img src="images/epconsultora.png" alt="EP Consultora"
+                        class="w-full h-full object-cover cursor-pointer lightbox-trigger" data-caption="EP Consultora"
+                        data-gallery='["images/epconsultora.png", "images/epconsultora1.png", "images/epconsultora2.png"]'>
                 </div>
                 <h4 class="font-heading text-3xl mb-2 text-secondary">Sitio Web Corporativo & Consultoría</h4>
                 <p class="font-body text-secondary/60 font-bold mb-4 uppercase tracking-widest text-xs">EP Consultora
@@ -348,9 +314,9 @@
                         </li>
                     </ul>
                 </div>
-                <a href="https://epconsultora.com" target="_blank" rel="noopener noreferrer"
-                    class="block text-center border-2 border-secondary text-secondary font-bold py-3 px-6 hover:bg-secondary hover:text-white transition-colors mt-auto">Visitar
-                    Sitio Web</a>
+                <div class="block text-center border-2 border-gray-300 text-gray-500 font-bold py-3 px-6 mt-auto">
+                    Proyecto en curso
+                </div>
             </div>
         </div>
     </section>
@@ -374,14 +340,14 @@
                 </div>
                 <!-- Plan B -->
                 <div
-                    class="bg-secondary text-white p-8 border border-secondary flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 relative">
+                    class="bg-white p-8 border-2 border-primary flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 relative shadow-lg">
                     <span
                         class="absolute top-0 right-0 bg-primary text-secondary text-xs px-3 py-1 font-bold transform translate-x-2 -translate-y-2">DESTACADO</span>
                     <div>
-                        <h3 class="font-heading text-3xl mb-1">Plan B: Catálogo</h3>
-                        <p class="text-sm text-gray-300">Carrito interactivo, 15-20 ítems, $0 hosting.</p>
+                        <h3 class="font-heading text-3xl mb-1 text-secondary">Plan B: Catálogo</h3>
+                        <p class="text-sm text-gray-600">Carrito interactivo, 15-20 ítems, $0 hosting.</p>
                     </div>
-                    <div class="font-bold text-2xl whitespace-nowrap text-primary">$160k - $250k</div>
+                    <div class="font-bold text-2xl whitespace-nowrap text-secondary">$160k - $250k</div>
                 </div>
                 <!-- Plan C -->
                 <div
@@ -397,7 +363,7 @@
 
         <!-- FAQ -->
         <div class="w-full md:w-1/2">
-            <h2 class="font-heading text-6xl md:text-7xl mb-12">F.A.Q.</h2>
+            <h2 class="font-heading text-6xl md:text-7xl mb-12">Preguntas Frecuentes</h2>
             <div class="space-y-4" id="faq-container">
                 <div class="border-b border-secondary/20 pb-4 faq-item cursor-pointer">
                     <div class="flex justify-between items-center">
@@ -436,17 +402,17 @@
     <!-- [08] Contacto -->
     <section id="contacto" class="flex flex-col md:flex-row min-h-screen">
         <div class="w-full md:w-1/2 bg-primary text-secondary p-12 md:p-24 flex flex-col justify-center">
-            <h2 class="font-heading text-7xl md:text-[8vw] leading-none mb-8 tracking-tight">Grow<br>with me.</h2>
-            <p class="font-body text-xl md:text-2xl mb-12">Let's improve your processes together.</p>
+            <h2 class="font-heading text-7xl md:text-[8vw] leading-none mb-8 tracking-tight">Crezcamos<br>juntos</h2>
+            <p class="font-body text-xl md:text-2xl mb-12">Mejoremos tu presencia online.</p>
 
             <div class="space-y-6">
                 <div>
                     <h4 class="font-bold text-sm uppercase tracking-widest mb-1">Email</h4>
-                    <p class="text-lg">hello@reallygreatsite.com</p>
+                    <p class="text-lg">analubari@gmail.com</p>
                 </div>
                 <div>
-                    <h4 class="font-bold text-sm uppercase tracking-widest mb-1">Phone</h4>
-                    <p class="text-lg">+91 (123) 456-7890</p>
+                    <h4 class="font-bold text-sm uppercase tracking-widest mb-1">Teléfono</h4>
+                    <p class="text-lg">+54 9(11) 5842-7814 </p>
                 </div>
             </div>
         </div>
@@ -482,6 +448,12 @@
                         </label>
                     </div>
                 </div>
+                <div class="mb-8">
+                    <label class="block text-sm font-bold mb-2">Mensaje</label>
+                    <textarea
+                        class="w-full bg-bg-main border-none p-4 focus:outline-none focus:ring-2 focus:ring-primary h-32 resize-y"
+                        placeholder="Contame un poco sobre tu proyecto..." required></textarea>
+                </div>
                 <button type="submit"
                     class="w-full bg-secondary text-white py-4 font-bold text-lg hover:bg-primary hover:text-secondary transition-colors">
                     Enviar mensaje
@@ -496,10 +468,34 @@
         <div class="font-heading font-bold text-xl mb-4 md:mb-0 text-primary">AVL.</div>
         <div class="text-sm text-gray-400">&copy; 2026 Ana Victoria Lubari. All rights reserved.</div>
         <div class="flex gap-6 mt-4 md:mt-0 text-sm font-bold">
-            <a href="#" class="hover:text-primary transition-colors">LinkedIn</a>
-            <a href="#" class="hover:text-primary transition-colors">GitHub</a>
+            <a href="https://www.linkedin.com/in/ana-victoria-lubari/"
+                class="hover:text-primary transition-colors">LinkedIn</a>
+            <a href="https://github.com/lubari" class="hover:text-primary transition-colors">GitHub</a>
         </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox"
+        class="fixed inset-0 z-[100] bg-black/90 hidden flex-col justify-center items-center opacity-0 transition-opacity duration-300">
+        <!-- Close Button -->
+        <button id="lightbox-close"
+            class="absolute top-6 right-8 text-white text-4xl hover:text-primary transition-colors cursor-pointer">&times;</button>
+
+        <!-- Navigation Buttons -->
+        <button id="lightbox-prev"
+            class="absolute left-4 md:left-12 top-1/2 -translate-y-1/2 text-white text-5xl hover:text-primary transition-colors cursor-pointer">&#10094;</button>
+        <button id="lightbox-next"
+            class="absolute right-4 md:right-12 top-1/2 -translate-y-1/2 text-white text-5xl hover:text-primary transition-colors cursor-pointer">&#10095;</button>
+
+        <!-- Image Container -->
+        <div class="w-full max-h-[90vh] px-8 md:px-20 flex justify-center items-center">
+            <img id="lightbox-img" src="" alt="Vista ampliada"
+                class="max-w-full max-h-[90vh] object-contain shadow-2xl">
+        </div>
+
+        <!-- Caption -->
+        <p id="lightbox-caption" class="text-white mt-6 text-xl font-heading tracking-wide text-center"></p>
+    </div>
 
     <!-- Scripts -->
     <script src="main.js"></script>

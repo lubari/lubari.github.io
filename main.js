@@ -32,65 +32,100 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Lógica para el Simulador Interactivo
-let totalCarrito = 0;
-let itemsCarrito = [];
-
-function agregarAlCarrito(precio, nombre) {
-    totalCarrito += precio;
-    itemsCarrito.push(nombre);
+// Lógica para el Lightbox de la Galería
+document.addEventListener('DOMContentLoaded', () => {
+    const triggers = document.querySelectorAll('.lightbox-trigger');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const lightboxCaption = document.getElementById('lightbox-caption');
+    const btnClose = document.getElementById('lightbox-close');
+    const btnPrev = document.getElementById('lightbox-prev');
+    const btnNext = document.getElementById('lightbox-next');
     
-    const totalEl = document.getElementById('simulador-total');
+    if (!lightbox) return; // Prevención si no existe
     
-    // Formatear a moneda ARS
-    totalEl.textContent = new Intl.NumberFormat('es-AR', {
-        style: 'currency',
-        currency: 'ARS',
-        maximumFractionDigits: 0
-    }).format(totalCarrito);
+    let currentIndex = 0;
+    let currentGallery = [];
+    let currentCaption = "";
 
-    // Animación visual del total
-    totalEl.classList.add('scale-110', 'text-green-500');
-    setTimeout(() => {
-        totalEl.classList.remove('scale-110', 'text-green-500');
-    }, 200);
-}
+    function openLightbox(trigger) {
+        const galleryData = trigger.getAttribute('data-gallery');
+        if (galleryData) {
+            try {
+                currentGallery = JSON.parse(galleryData);
+            } catch (e) {
+                currentGallery = [trigger.src];
+            }
+        } else {
+            currentGallery = [trigger.src];
+        }
+        
+        currentCaption = trigger.getAttribute('data-caption') || '';
+        currentIndex = 0;
+        
+        if (currentGallery.length <= 1) {
+            btnPrev.classList.add('hidden');
+            btnNext.classList.add('hidden');
+        } else {
+            btnPrev.classList.remove('hidden');
+            btnNext.classList.remove('hidden');
+        }
 
-function enviarWhatsApp() {
-    if (totalCarrito === 0) {
-        alert("El carrito está vacío. Agregá algún producto primero.");
-        return;
+        updateLightboxContent();
+        lightbox.classList.remove('hidden');
+        lightbox.classList.add('flex');
+        
+        setTimeout(() => {
+            lightbox.classList.remove('opacity-0');
+        }, 10);
     }
 
-    let mensaje = "¡Hola! Quisiera hacer el siguiente pedido:\n\n";
-    itemsCarrito.forEach(item => {
-        mensaje += `- ${item}\n`;
+    function closeLightbox() {
+        lightbox.classList.add('opacity-0');
+        setTimeout(() => {
+            lightbox.classList.add('hidden');
+            lightbox.classList.remove('flex');
+        }, 300); 
+    }
+
+    function updateLightboxContent() {
+        lightboxImg.src = currentGallery[currentIndex];
+        lightboxCaption.textContent = currentCaption;
+    }
+
+    function showNext() {
+        if (currentGallery.length <= 1) return;
+        currentIndex = (currentIndex + 1) % currentGallery.length;
+        updateLightboxContent();
+    }
+
+    function showPrev() {
+        if (currentGallery.length <= 1) return;
+        currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+        updateLightboxContent();
+    }
+
+    triggers.forEach(trigger => {
+        trigger.addEventListener('click', () => {
+            openLightbox(trigger);
+        });
     });
-    
-    const totalFormateado = new Intl.NumberFormat('es-AR', {
-        style: 'currency',
-        currency: 'ARS',
-        maximumFractionDigits: 0
-    }).format(totalCarrito);
 
-    mensaje += `\n*Total a pagar: ${totalFormateado}*`;
+    btnClose.addEventListener('click', closeLightbox);
+    btnNext.addEventListener('click', showNext);
+    btnPrev.addEventListener('click', showPrev);
 
-    // Codificar mensaje para URL
-    const mensajeCodificado = encodeURIComponent(mensaje);
-    const numeroPrueba = "1234567890"; // Reemplazar por número real
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            closeLightbox();
+        }
+    });
 
-    const urlWhatsApp = `https://wa.me/${numeroPrueba}?text=${mensajeCodificado}`;
-    
-    // Abrir en nueva pestaña
-    window.open(urlWhatsApp, '_blank');
-}
-
-// Botón "Abrir Simulador" que hace scroll al simulador
-document.getElementById('btn-simulador').addEventListener('click', () => {
-    // Si estás en mobile y querés scrollear, o simplemente resaltar la demo.
-    const simuladorBox = document.querySelector('.max-w-sm');
-    simuladorBox.classList.add('ring-4', 'ring-white', 'scale-105');
-    setTimeout(() => {
-        simuladorBox.classList.remove('ring-4', 'ring-white', 'scale-105');
-    }, 1000);
+    document.addEventListener('keydown', (e) => {
+        if (!lightbox.classList.contains('hidden')) {
+            if (e.key === 'Escape') closeLightbox();
+            if (e.key === 'ArrowRight') showNext();
+            if (e.key === 'ArrowLeft') showPrev();
+        }
+    });
 });
